@@ -1,0 +1,63 @@
+{
+    "gradient": {
+        "num_attractors": 2,
+        "num_repellers": 2,
+        "gradient_strength": 0.01,
+        "pole_motion": 0.05,
+        "standard_deviation": 5
+    },
+    "particle": {
+        "num_particle_types": 3,
+        "num_initial_particles": 2000,
+        "initial_distribution": [
+            0.45,
+            0.45,
+            0.1
+        ],
+        "repopulate_strategy": 1,
+        "bond_matrix": [
+            [
+                0,
+                1,
+                2,
+                0.1
+            ],
+            [
+                0,
+                1,
+                -1,
+                0.01
+            ]
+        ],
+        "attraction_matrix": [
+            [
+                0.01,
+                0.01,
+                0.01
+            ],
+            [
+                -0.01,
+                0.01,
+                -0.01
+            ],
+            [
+                -0.01,
+                -0.01,
+                0
+            ]
+        ]
+    },
+    "interaction": {
+        "brownian_motion": 0.005,
+        "max_interaction_distance": 0.5,
+        "repulsion_distance": 0.12,
+        "repulsion_strength": 1,
+        "bond_strength": 0.25,
+        "max_motion": 0.05
+    },
+    "grid": {
+        "max_x": 10,
+        "max_y": 10,
+        "grid_size": 1
+    }
+}
